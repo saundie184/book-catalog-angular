@@ -1,0 +1,34 @@
+<table class='table'>
+  <tr>
+    <th></th>
+    <th>
+      Title
+    </th>
+    <th>
+      Author
+    </th>
+    <th>
+
+    </th>
+  </tr>
+  <tr ng-repeat='book in BC.bookList'>
+    <td>
+      <a href='http://localhost:8080/#/book/{{book.id}}'>
+        <img src='{{book.imageUrl}}'/>
+      </a>
+    </td>
+    <td>
+      {{book.bookName}}
+    </td>
+    <td>
+      {{book.author}}
+    </td>
+    <td>
+      <!-- {{book.id}} -->
+      <!-- TODO use $location service -->
+      <!-- <input ng-click='BC.editBook(book.id)' class='btn btn-warning' type='button' value='Edit'/> -->
+      <input ng-click='' class='btn btn-warning' type='button' value='Edit'/>
+      <input ng-click='BC.deleteBook(book.id)' class='btn btn-danger' type='button' value='Delete'/>
+    </td>
+  </tr>
+</table>

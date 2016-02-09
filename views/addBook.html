@@ -1,0 +1,22 @@
+<h3>{{NC.pageTitle}}</h3>
+<div class="form-group">
+  <div>
+    <label for="titleInput">Title</label>
+    <input ng-model='NC.titleInput' type="text" class="form-control" id="titleInput" placeholder="" />
+  </div>
+  <div>
+    <label for="authorInput">Author</label>
+    <input ng-model='NC.authorInput' type="text" class="form-control" id="authorInput" placeholder="" />
+  </div>
+  <div>
+    <label for="descriptionInput">Summary of book</label>
+    <input ng-model='NC.descriptionInput' type="text" class="form-control" id="descriptionInput" placeholder="" />
+  </div>
+  <div>
+    <label for="imageInput">Image URL</label>
+    <input ng-model='NC.imageInput' type="url" class="form-control" id="imageInput" placeholder="" />
+  </div>
+  <div>
+    <input ng-click='NC.submitBook()' class='btn btn-success' type='button' value='Submit'/>
+  </div>
+</div>
